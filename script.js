@@ -5,7 +5,7 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-  var prompt = ("how many characters");
+  
 
   passwordText.value = password;
 
@@ -18,6 +18,7 @@ function generatePassword() {
   confirm ("click ok to confirm including lowercase Characters.");
   confirm ("click ok to confirm uppercase characters.");
 
+   
   return Math.floor(Math.random() * Math.floor(128));
   
 }
